@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="stylecart.css">
+    <link rel="icon" type="image/png" href="../media/try.svg">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/983f33086a.js" crossorigin="anonymous"></script>
+    
+        <title>SpyrosLiontos - Kαλάθι</title>
+        <script src="cart.js"></script>
+</head>
+<body onload="onloadgeneral()">
+    
+
+    <div class="headerstart"><img src="../media/try.svg">   <br><br></div>
+
+<div class="navbarcontainer">  
+    <ul>
+        <ul>
+            <li><a  href="../homepage/homepage.html">Home</a></li>
+            <li><a  href="../products/productspage.html">Products</a></li>
+            <li><a href="../contactus/contactform.html">Contact</a></li>
+            <li><a href="../About/About.html">About</a></li>
+        </ul>
+        <div class="cart">
+            <a href="../cart/cart.html">
+                <div class="number" id="numberoncart"></div>
+            <i class='fas fa-shopping-cart' style='font-size:24px'></i>
+            </a>
+        </div>
+</div>
+
+<div class="checkout">
+    <div class="column" id="column"></div>
+    <div class="products" id="products">
+
+    </div>
+    <div class="box">
+        <h2> Συμπληρώστε τα στοιχεία σας</h2>
+        <form action="cart.php" method="POST" target="_self" id="form">
+             <div>
+                 <input type="text" name="fullname" required>
+                <label>Ονοματεπώνυμο</label>
+            </div>
+            <div>
+                <input type="email" onchange="hi()" id="email" name="email" required>
+                <label id="lemail">Email</label>
+            </div>
+            <div>
+                <input type="text"  name="address" required>
+                <label>Διεύθυνση</label>
+            </div>
+            <div>
+                <input type="text"  name="postalcode" required>
+                <label>Τ.Κ.</label>
+            </div>
+            <div>
+                <input type="text"  name="city" required>
+                <label>Πόλη, Νομός</label>
+            </div>
+            <div>
+                <input type="text"  name="phonenumber" required>
+                <label>Τηλέφωνο επικοινωνίας</label>
+            </div>
+            <input type="submit" name="" value="submit">
+        </form>
+     </div>
+        
+</div>
+
+
+
+
+
+
+
+
+
+
+
+<div class="contact">
+    <div class="logoend">
+        <img src="../media/try.svg"> 
+    </div>
+    <div class="contactinfo">
+        <span style="font-size: 21px;">&nbsp&nbspΕπικοινωνία</span><br><br><br>
+        <div class="tricky">
+        <i class="material-icons">&#xe55f;</i>
+        <p>&nbsp Ελλάδα</p>
+        </div>
+        <br>
+        <div class="tricky">
+        <i class="material-icons">phone</i>
+        <p> + 30 6969696969</p>
+        </div><br>
+        <div class="tricky">
+        <i class="material-icons">mail_outline</i>
+        <p>&nbspspirosliontos@hotmail.com</p>
+        </div>
+    </div>
+    <div class="findus">
+        <span style="font-size: 21px;">&nbsp&nbspΒρείτε μας</span><br><br><br>
+        <div class="tricky1" style="display: inline-block;">
+        <a href="https://www.facebook.com/">
+        <i class='fab fa-facebook-square' style='font-size:36px'></i>
+        <p>&nbsp © Facebook</p></a>
+        </div>
+        <br><br>
+        <div class="tricky1" style="display: inline-block;">
+        <a href="https://www.instagram.com/">
+        <i class='fab fa-instagram' style='font-size:36px'></i>
+        <p> Instagram</p></a>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Copyright © 2020 </p>  
+    </div>
+</div>
+</body>
+</html>

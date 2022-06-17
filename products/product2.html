@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" href="../media/try.svg">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/983f33086a.js" crossorigin="anonymous"></script>
+    
+        <title>SpyrosLiontos - Products</title>
+        <script src="products.js"></script>
+</head>
+<body onload="numberofproducts()">
+    
+
+    <div class="headerstart"><img src="../media/try.svg">   <br><br></div>
+
+<div class="navbarcontainer">  
+    <ul>
+        <ul>
+            <li><a  href="../homepage/homepage.html">Home</a></li>
+            <li><a class="active" href="../products/productspage.html">Products</a></li>
+            <li><a href="../contactus/contactform.html">Contact</a></li>
+            <li><a href="../About/About.html">About</a></li>
+        </ul>
+        <div class="cart">
+            <a href="../cart/cart.html">
+                <div class="number" id="numberoncart"></div>
+            <i class='fas fa-shopping-cart' style='font-size:24px'></i>
+            </a>
+        </div>
+</div>
+
+
+
+
+<div class="productcontainer" id="productcontainer">
+
+    <div class="imgcontainer">
+        <img src="../media/photoproducts/pec.jpg" alt="">
+    </div>
+    <div class="description">
+        <h2>Product</h2>
+        <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Impedit cumque quod ad quasi laboriosam neque in sint animi, cupiditate nam a earum facere aspernatur labore fugit similique magni recusandae optio quaerat, incidunt molestiae. Veritatis dolores distinctio id assumenda hic laborum voluptatibus est, asperiores minima sit deleniti sapiente quidem deserunt modi!
+        </p>
+    </div>
+    <div class="click" id="buy" onclick="buyfunc()">
+        
+        <p>Αγορά</p>
+        
+    </div>
+
+
+</div>
+
+
+<div class="popup" id="popup">
+    <div class="stay">
+        <a href="../products/product2.html" onclick="setCookie('product2',2)"><p>Συνέχεια Αγορών</p></a>
+    </div>
+
+    <div class="gotocart">
+        <a href="../cart/cart.html" onclick="setCookie('product2',2)"><p>Μετάβαση στο καλάθι</p></a>
+    </div>
+    
+</div>
+
+
+
+
+<div class="contact">
+    <div class="logoend">
+        <img src="../media/try.svg"> 
+    </div>
+    <div class="contactinfo">
+        <span style="font-size: 21px;">&nbsp&nbspΕπικοινωνία</span><br><br><br>
+        <div class="tricky">
+        <i class="material-icons">&#xe55f;</i>
+        <p>&nbsp Ελλάδα</p>
+        </div>
+        <br>
+        <div class="tricky">
+        <i class="material-icons">phone</i>
+        <p> + 30 6969696969</p>
+        </div><br>
+        <div class="tricky">
+        <i class="material-icons">mail_outline</i>
+        <p>&nbspspirosliontos@hotmail.com</p>
+        </div>
+    </div>
+    <div class="findus">
+        <span style="font-size: 21px;">&nbsp&nbspΒρείτε μας</span><br><br><br>
+        <div class="tricky1" style="display: inline-block;">
+        <a href="https://www.facebook.com/">
+        <i class='fab fa-facebook-square' style='font-size:36px'></i>
+        <p>&nbsp © Facebook</p></a>
+        </div>
+        <br><br>
+        <div class="tricky1" style="display: inline-block;">
+        <a href="https://www.instagram.com/">
+        <i class='fab fa-instagram' style='font-size:36px'></i>
+        <p> Instagram</p></a>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Copyright © 2020 </p>  
+    </div>
+</div>
+</body>
+</html>
